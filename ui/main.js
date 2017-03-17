@@ -1,1 +1,10 @@
 console.log('Loaded!');
+
+//Change the text of the main-text div
+var element=socument.getElementById('main-text');
+
+element.innerHTML="New value";
+
+/Move the image
+var img=document.getElementById('img');
+img.onclick
