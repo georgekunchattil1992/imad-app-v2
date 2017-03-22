@@ -19,4 +19,7 @@ button.onclick=function(){
     	//Not done yet
     };
 
+    //Make the request
+    request.open('GET','http://georgekunchattil1992.imad.hasura-app.io/counter',true);
+    request.send(null);
 };
