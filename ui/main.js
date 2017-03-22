@@ -50,5 +50,5 @@ submit.onclick=function(){
   };
   
   //Make the request.
-    request.open('GET','http://georgekunchattil1992.imad.hasura-app.io/submit-name?name='+name,true);
+    request.open('GET','http://georgekunchattil1992.imad.hasura-app.io/submit-name?name='+ name,true);
     request.send(null);         
