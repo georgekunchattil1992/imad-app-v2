@@ -1,6 +1,5 @@
 //Counter code
 var button=document.getElementById('counter');
-var counter=0;
 
 button.onclick=function(){
 
@@ -8,9 +7,16 @@ button.onclick=function(){
     var request=new XMLHttpRequest();
 
 	//Capture the response and store it in avariable 
+    request.onreadyStatechange=function(){
+    	if (request.readyState==XMLHttpRequest.DONE) {
+    		//Take some action
+    		if (request.status==200) { //status 200 i.e request is in successful state
+    			var counter=request.responseText;
+    			var span=document.getElementById('count');
+    			span.innerHTML=counter.toString();
+    		}
+    	}
+    	//Not done yet
+    };
 
-	//Render the variable in the correct span
-	counter=counter+1;
-	var span=document.getElementById('count');
-	span.innerHTML=counter.toString();
 };
