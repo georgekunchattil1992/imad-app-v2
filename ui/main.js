@@ -11,7 +11,9 @@ button.onclick=function(){
     	if (request.readyState==XMLHttpRequest.DONE) {
     		//Take some action
     		if (request.status==200) { //status 200 i.e request is in successful state
-    			
+    			var counter=request.responseText;
+    			var span=document.getElementById('count');
+    			span.innerHTML=counter.toString();
     	}
     	//Not done yet
     };
@@ -22,7 +24,7 @@ button.onclick=function(){
 };
 
 //Submit name
-var nameInput=document.getElementById('name');ser
+var nameInput=document.getElementById('name');
 var name=nameInput.value;
 var submit=document.getElementById('submit_btn');
 submit.onclick=function(){
