@@ -25,6 +25,7 @@ app.get('/css/style.css',function(req,res){
 	res.sendFile(__dirname + '/css/style.css');
 });*/
 
+var pool = new Pool(config);
 app.get('/test-db',function(req,res){
     //make a select request
     //return a response with the results
