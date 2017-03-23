@@ -4,6 +4,16 @@ var path = require('path');
 var express=require('express');
 var app=express();
 
+var Pool=require('pg').Pool;
+
+var config={
+    user:'georgekunchattil1992',
+    database:'georgekunchattil1992',
+    host:'db.imad.hasura-app.io',
+    port:'5432',
+    password:process.env.DB_PASSWORD
+};
+
 app.use(express.static('ui'));
 app.get('/',function(req,res){
 	res.sendFile(__dirname + '/ui/index.html');
@@ -14,6 +24,12 @@ app.get('/',function(req,res){
 app.get('/css/style.css',function(req,res){
 	res.sendFile(__dirname + '/css/style.css');
 });*/
+
+app.get('/test-db',function(req,res){
+    //make a select request
+    //return a response with the results
+    
+});
 
 app.listen(8080,function(){
 	console.log('app is listening on 8080 !');
