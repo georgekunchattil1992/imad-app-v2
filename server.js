@@ -1,6 +1,6 @@
 var morgan = require('morgan');
 var path = require('path');
-//app.use(morgan('combined'));
+app.use(morgan('combined'));
 var express=require('express');
 var app=express();
 
@@ -11,7 +11,7 @@ var config={
     database:'georgekunchattil1992',
     host:'db.imad.hasura-app.io',
     port:'5432',
-    password:process.env.DB_PASSWORD
+    password:process.env.DB_PASSWORD //create environment variable
 };
 
 app.use(express.static('ui'));
