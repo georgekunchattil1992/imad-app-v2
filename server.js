@@ -74,6 +74,7 @@ function createTemplate(data){
 
 }
 
+app.get('/hash/')
    //counter code
  var counter=0;
  app.get('/counter',function(req,res){
@@ -117,6 +118,8 @@ function createTemplate(data){
    });
 
  });
+ 
+ 
 
 app.listen(8080,function(){
 	console.log('app is listening on 8080 !');
