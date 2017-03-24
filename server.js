@@ -1,11 +1,10 @@
 var morgan = require('morgan');
 var path = require('path');
 var express=require('express');
-var app=express();
-app.use(morgan('combined'));
 
 var Pool=require('pg').Pool;
 var crypto=require('crypto');
+var bodyParser=require('body-parser');
 
 var config={
     user:'georgekunchattil1992',
@@ -14,6 +13,10 @@ var config={
     port:'5432',
     password:process.env.DB_PASSWORD //create environment variable
 };
+
+var app=express();
+app.use(morgan('combined'));
+app.use(bodyParser.json());
 
 app.use(express.static('ui'));
 app.get('/',function(req,res){
@@ -95,8 +98,11 @@ app.get('/hash/:input',function(req,res){
 });
 
 //create user
-app.get('/create-user', function(req,res){
+app.post('/create-user', function(req,res){
    //username,password
+   //JSON
+   var username=req.body.username;
+   var password=req.body.password;
    var salt=crypto.getRandomBytes(128).toString('hex');
    var dbString=hash(password,salt);
    pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbString], function (err,result){
