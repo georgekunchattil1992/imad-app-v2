@@ -65,7 +65,7 @@ app.get('/test-db',function(req,res){
 	    }
 	    else{
 	         if(result.rows.length==0){
-	             res.status(404) //status not found
+	             res.status(404).send('Article not found');   //status not found
 	         }
 	         else{
 	               var articleData=result.rows[0];
