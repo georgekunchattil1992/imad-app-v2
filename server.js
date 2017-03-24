@@ -38,41 +38,7 @@ app.get('/test-db',function(req,res){
         }
     });
    
-   var articles={ 
-   			'article-one':{
-				title:"Article One | Tanmai Gopal",
-				heading:'Article One',
-				date:'Sep 5, 2016',
-				content:`
-				         <p>
-  							This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
-  						</p>
-  						<p>
-  							This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
-  					   </p>
-  					   <p>
-  							This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
-  					   </p>`
-			},
-			'article-two':{
-				title:'Article Two | George Jacob',
-				heading:'Article Two',
-				date: 'Feb 5, 2017',
-				content: `
-				    <p>
-  						This is the content of my second article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
-  					</p> `
-			},
-			'article-three':{
-				title:'Article Three | George Jacob',
-				heading:'Article Three',
-				date: 'Feb 15, 2017',
-				content: `
-				    <p>
-  							This is the content of my third article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
-  					</p> `
-			}
- };
+  
 function createTemplate(data){
 	var title=data.title;
 	var date=data.date;
