@@ -60,8 +60,8 @@ app.get('/test-db',function(req,res){
 	//article(articleName={} content object for article-one
 	var articleName=req.params.articleName;
 	
-	pool.query(SELECT * FROM article WHERE title="")
-	res.send(createTemplate(articles[articleName]));
+	pool.query("SELECT * FROM article WHERE title='article-one'")
+	res.send(createTemplate(articleData));
    });
 
  });
