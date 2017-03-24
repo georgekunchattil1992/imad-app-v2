@@ -76,6 +76,7 @@ function createTemplate(data){
 
 function hash(input){
     //How do we create a hash?
+    
 }
 
 app.get('/hash/:input',function(req,res){
