@@ -74,6 +74,10 @@ function createTemplate(data){
 
 }
 
+function hash(input){
+    
+}
+
 app.get('/hash/:input',function(req,res){
     res.sendFile(path.join(__dirname,'ui','index.html'));
 });
