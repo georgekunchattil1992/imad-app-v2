@@ -59,7 +59,20 @@ app.get('/test-db',function(req,res){
 	//articleName==article-one
 	//article(articleName={} content object for article-one
 	
-	pool.query("SELECT * FROM article WHERE title=" +req.params.articleName)
+	pool.query("SELECT * FROM article WHERE title=" +req.params.articleName, function(err,result){
+	    if(err){
+	        res.status(500).send(err.toString());  //Status error
+	    }
+	    else{
+	         if(result.rows.length==0){
+	             res.status(404) //status not found
+	         }
+	         else{
+	               var articleData=result.rows[0];
+	         }
+	    }
+	});
+	
 	res.send(createTemplate(articleData));
    });
 
