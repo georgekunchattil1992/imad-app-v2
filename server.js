@@ -76,6 +76,7 @@ function createTemplate(data){
 
 function hash(input){
     //How do we create a hash?
+    var hashed=crypto.pbkdf2Sync();
     
 }
 
