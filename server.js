@@ -80,10 +80,12 @@ function hash(input,salt){
     var hashed=crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
     return hashed.toString('hex');
     
+    /*
     //algorithm md5
     //password->a8q2rasdfjq2ruqw9wxq029irxpmqoi3
     //password-this is some-random-string->c8q2rasdfjq2ruqowiuiqu32i4uijeiajdfajfkkajsdf
     //password-> "password-this-is-a-salt" -> <hash> -> <hash> x 10k times
+    */
     
 }
 
