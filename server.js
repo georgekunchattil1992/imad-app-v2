@@ -24,7 +24,7 @@ app.get('/',function(req,res){
 });
 
 app.get('/works',function(req,res){
-	res.sendFile(__dirname + '/ui/index.html');
+	res.sendFile(__dirname + '/ui/a.html');
 });
 
 /* one way of including css
