@@ -19,8 +19,13 @@ app.use(morgan('combined'));
 app.use(bodyParser.json());
 
 app.use(express.static('ui'));
+
 app.get('/',function(req,res){
 	res.sendFile(__dirname + '/ui/index.html');
+});
+
+app.get('/videos',function(req,res){
+	res.sendFile(__dirname + '/ui/videos.html');
 });
 
 app.get('/works',function(req,res){
