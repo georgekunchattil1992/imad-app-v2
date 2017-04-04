@@ -25,7 +25,7 @@ app.get('/',function(req,res){
 });
 
 app.get('/videos',function(req,res){
-	res.sendFile(__dirname + '/ui/videos.html');
+	res.sendFile(__dirname + '/ui/Links/videos.html');
 });
 
 app.get('/works',function(req,res){
