@@ -137,6 +137,9 @@ app.post('/login', function (req,res){
                res.send(403).send('username/password is invalid'); //status 403--> forbidden
            }
            else{
+               //Match the password
+               var dbString=result.rows[0].password;
+               
                  res.send("User successfully created: " + username);
                }
        }
