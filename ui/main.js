@@ -141,7 +141,7 @@ app.post('/login', function (req,res){
    });
 });
 
-   //counter code
+  /*
  var counter=0;
  app.get('/counter',function(req,res){
   counter=counter+1;
@@ -156,7 +156,8 @@ app.post('/login', function (req,res){
     names.push(name);
     //JSON: Javascript Object Notation
     res.send(JSON.stringify(names));
-  });
+  }); 
+                 */
 
 //articles in dynamic format
   app.get('/articles/:articleName', function(req,res){
