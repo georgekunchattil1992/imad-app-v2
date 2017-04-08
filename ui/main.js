@@ -215,7 +215,9 @@ app.post('/login', function (req,res){
  //Make the request
  var username=document.getElementById('username').value;
  var password=document.getElementById('password').value;
- request.open('POST','http://georgekunchattil1992.imad.hasura-app.io/submit?name='+name, true);
+ console.log(username);
+ console.log(password);
+ request.open('POST','http://georgekunchattil1992.imad.hasura-app.io/login', true);
  request.send(JSON.stringify({username: username, password: password}));
 
 app.listen(8080,function(){
