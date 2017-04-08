@@ -213,8 +213,8 @@ app.post('/login', function (req,res){
  });
  
  //Make the request
- var nameInput=document.getElementById('name');
- var name=nameInput.value;
+ var username=document.getElementById('username').value;
+ var password=document.getElementById('password').value;
  request.open('POST','http://georgekunchattil1992.imad.hasura-app.io/submit?name='+name, true);
  request.send(JSON.stringify({username: username, password: password}));
 
