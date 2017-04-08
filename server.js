@@ -32,6 +32,10 @@ app.get('/works',function(req,res){
 	res.sendFile(__dirname + '/ui/a.html');
 });
 
+app.get('/loginpage',function(req,res){
+	res.sendFile(__dirname + '/ui/loginpage.html');
+});
+
 /* one way of including css
 app.get('/css/style.css',function(req,res){
 	res.sendFile(__dirname + '/css/style.css');
