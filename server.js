@@ -40,6 +40,7 @@ app.get('/updates',function(req,res){
 	res.sendFile(__dirname + '/ui/project.html');
 });
 
+
 /* one way of including css
 app.get('/css/style.css',function(req,res){
 	res.sendFile(__dirname + '/css/style.css');
