@@ -39,7 +39,9 @@ app.get('/loginpage',function(req,res){
 app.get('/updates',function(req,res){
 	res.sendFile(__dirname + '/ui/project.html');
 });
-
+app.get('/build',function(req,res){
+	res.sendFile(__dirname + 'http://htmlpreview.github.io/?https://github.com/georgekunchattil1992/FireSafety/blob/master/build2/index.html');
+});
 
 /* one way of including css
 app.get('/css/style.css',function(req,res){
