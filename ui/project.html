@@ -1,220 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang=en>
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title> Smart Fire Safety</title>
-    <link rel="icon" href="https://pbs.twimg.com/profile_images/595054829745016833/fgvAf-q9_400x400.jpg">
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" media="screen" charset="utf-8">
-
-    <!-- Custom Fonts -->
-    <link  rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" media="screen" charset="utf-8">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' media="screen" charset="utf-8">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen" charset="utf-8">
-
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="css/creative.min[updates].css" media="screen" charset="utf-8">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style>
-       .google{
-  width: 60px;
-  height: 80px;
-  margin: 50px auto;
-  background: rgb(235,233,220); /* Old browsers */
-	background: linear-gradient(to right,  rgba(235,233,220,1) 0%,rgba(228,225,209,1) 100%);
-	border-radius: 5px;
-  border-right: 12px solid #E14D41;
-  border-left: 12px solid #E14D41;
-  position: relative;
-  overflow: hidden;
-  
-  &:after{
-    content: ' ';
-    display: block;
-    border: 12px solid #E14D41;
-    width: 73px;
-    height: 73px;
-    transform: rotate(45deg);
-    position: absolute;
-    top: -70px;
-    left: -18px;
-    box-shadow: 50px 0px #ACABA1;
-  }
-  &:before{
-    content: ' ';
-    display: block;
-    border: 1px solid #ACABA1;
-    width: 73px;
-    height: 73px;
-    transform: rotate(45deg);
-    position: absolute;
-    bottom: -46px;
-    left: 5px;
-  }
-}
-    </style>
-<!-- Spin Animation-->
-<link rel="stylesheet" href="font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset=utf-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name=description content>
+<meta name=author content>
+<title> Smart Fire Safety</title>
+<link rel=icon href=https://pbs.twimg.com/profile_images/595054829745016833/fgvAf-q9_400x400.jpg>
+<link rel=stylesheet href=vendor/bootstrap/css/bootstrap.min.css media=screen charset=utf-8>
+<link rel=stylesheet href=vendor/font-awesome/css/font-awesome.min.css media=screen charset=utf-8>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" media=screen charset=utf-8>
+<link rel=stylesheet href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' media=screen charset=utf-8>
+<link rel=stylesheet href=vendor/magnific-popup/magnific-popup.css media=screen charset=utf-8>
+<link rel=stylesheet href=css/creative.min[updates].css media=screen charset=utf-8>
+<!--[if lt IE 9]>
+<script src=https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js></script>
+<script src=https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js></script>
+<![endif]-->
+<style>.google{width:60px;height:80px;margin:50px auto;background:#ebe9dc;background:linear-gradient(to right,rgba(235,233,220,1) 0,rgba(228,225,209,1) 100%);border-radius:5px;border-right:12px solid #e14d41;border-left:12px solid #e14d41;position:relative;overflow:hidden;&:after{content:' ';display:block;border:12px solid #e14d41;width:73px;height:73px;transform:rotate(45deg);position:absolute;top:-70px;left:-18px;box-shadow:50px 0 #acaba1}&:before{content:' ';display:block;border:1px solid #acaba1;width:73px;height:73px;transform:rotate(45deg);position:absolute;bottom:-46px;left:5px}}</style>
+<link rel=stylesheet href=font-awesome/4.7.0/css/font-awesome.min.css>
 </head>
-
-<body id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                
-                <a class="navbar-brand page-scroll" href="#page-top" style="color:blue;">SMART FIRE SAFETY</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right" style="color:white; visibility: hidden;">
-                    <li>
-                        <a class="page-scroll" href="#about" style="color:white;">About</a>
-                    </li>
-                    <li>
-                        <a class=" page-scroll" href="#gallery"style="color:white;">Gallery</a>
-                    </li>
-                 <!--   <li>
-                        <a class="page-scroll" href="#portfolio" style="color:white;">Portfolio</a>
-                    </li> -->
-                    <li>
-                        <a class=" page-scroll" href="#contact" style="color:white;">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-               <!--  <center><img src="img/profile 2.jpg" class="img-circle" alt="profile"></center>
-                <h1 id="homeHeading" style="color:Blue"><center>Smart Fire Safety</h1></center>-->
-                
-                <br><br><br><br><br><br><br>&nbsp;
-                <center><a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a></center>
-            </div>
-        </div>
-    </header>
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Smart Fire Safety</h2>
-                       Please complete the following assessment before playing the game.
-                    <hr class="light">
-                    
-                    <div>
-                           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdr5-VPIAKkzuVYy2IkgRkyt7a1cc1Q3ewli7i9RpNzXs3wMw/viewform?embedded=true" width="800" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                       </div>
-                    <a href="#gallery" class="page-scroll btn btn-default btn-xl sr-button">Play Game</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-      <section class="bg-primary" id="gallery" style="background:lightgreen;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading"><b>Smart Fire Safety Game</b></h2>
-                       Let's Play the game
-                    <hr class="light">
-                    <p class="text-faded" style="color:black">
-                        This game does not support in mobiles. If there is any issue in loading the game, just refresh the page or press F5.
-                    </p>
-                    <div>
-                           <iframe  src="https://georgekunchattil1992.github.io/index.html" style ="width:873px;height:633px;" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                       </div>
-                    <a href="#contact" class="page-scroll btn btn-default btn-xl sr-button">Let's Check Skills</a>
-                </div>
-            </div>
-        </div>
-    </section>
-  
-
-<!--
-    <section id="portfolio" style="background-color: lightblue;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Projects</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-               
-                
-             
-            </div>
-        </div>
-    </section>
-    -->
-
-    
-
-    <section id="contact" style="background: lightblue;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's check our skills from game</h2>
-                    <hr class="primary">
-                   
-                    <div>
-                          
-                           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEY_7a_XkiCFS-VrT-1rSySheXq2X19KpjOCyCzV4Vro7MyA/viewform?embedded=true" width="800" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                       </div>
-                </div>
-               
-               
-             
-             
-            
-            </div>
-        </div>
-    </section>
-    <footer  style ="background-color:black;color:white;"><br>
-            <center><h3>Best view in 1024px x 768px resolution size</h3></center><br>
-        </footer>
-
-    <!-- jQuery -->
-    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script type="text/javascript" src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script type="text/javascript" src="js/creative.min.js"></script>
-
+<body id=page-top>
+<nav id=mainNav class="navbar navbar-default navbar-fixed-top">
+<div class=container-fluid>
+<div class=navbar-header>
+<a class="navbar-brand page-scroll" href=#page-top style=color:blue>SMART FIRE SAFETY</a>
+</div>
+<div class="collapse navbar-collapse" id=bs-example-navbar-collapse-1>
+<ul class="nav navbar-nav navbar-right" style=color:white;visibility:hidden>
+<li>
+<a class=page-scroll href=#about style=color:white>About</a>
+</li>
+<li>
+<a class=page-scroll href="#gallery"style=color:white;>Gallery</a>
+</li>
+<li>
+<a class=page-scroll href=#contact style=color:white>Contact</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<header>
+<div class=header-content>
+<div class=header-content-inner>
+<br><br><br><br><br><br><br>&nbsp;
+<center><a href=#about class="btn btn-primary btn-xl page-scroll">Find Out More</a></center>
+</div>
+</div>
+</header>
+<section class=bg-primary id=about>
+<div class=container>
+<div class=row>
+<div class="col-lg-8 col-lg-offset-2 text-center">
+<h2 class=section-heading>Smart Fire Safety</h2>
+Please complete the following assessment before playing the game.
+<hr class=light>
+<div>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdr5-VPIAKkzuVYy2IkgRkyt7a1cc1Q3ewli7i9RpNzXs3wMw/viewform?embedded=true" width=800 height=800 frameborder=0 marginheight=0 marginwidth=0>Loading...</iframe>
+</div>
+<a href=#gallery class="page-scroll btn btn-default btn-xl sr-button">Play Game</a>
+</div>
+</div>
+</div>
+</section>
+<section class=bg-primary id=gallery style=background:lightgreen>
+<div class=container>
+<div class=row>
+<div class="col-lg-8 col-lg-offset-2 text-center">
+<h2 class=section-heading><b>Smart Fire Safety Game</b></h2>
+Let's Play the game
+<hr class=light>
+<p class=text-faded style=color:black>
+This game does not support in mobiles. If there is any issue in loading the game, just refresh the page or press F5.
+</p>
+<div>
+<iframe src=https://georgekunchattil1992.github.io/index.html style=width:873px;height:633px scrolling=no frameborder=0 marginheight=0 marginwidth=0>Loading...</iframe>
+</div>
+<a href=#contact class="page-scroll btn btn-default btn-xl sr-button">Let's Check Skills</a>
+</div>
+</div>
+</div>
+</section>
+<section id=contact style=background:lightblue>
+<div class=container>
+<div class=row>
+<div class="col-lg-8 col-lg-offset-2 text-center">
+<h2 class=section-heading>Let's check our skills from game</h2>
+<hr class=primary>
+<div>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEY_7a_XkiCFS-VrT-1rSySheXq2X19KpjOCyCzV4Vro7MyA/viewform?embedded=true" width=800 height=800 frameborder=0 marginheight=0 marginwidth=0>Loading...</iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer style=background-color:black;color:white><br>
+<center><h3>Best view in 1024px x 768px resolution size</h3></center><br>
+</footer>
+<script type=text/javascript src=vendor/jquery/jquery.min.js></script>
+<script type=text/javascript src=vendor/bootstrap/js/bootstrap.min.js></script>
+<script type=text/javascript src=https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js></script>
+<script type=text/javascript src=vendor/scrollreveal/scrollreveal.min.js></script>
+<script type=text/javascript src=vendor/magnific-popup/jquery.magnific-popup.min.js></script>
+<script type=text/javascript src=js/creative.min.js></script>
 </body>
-
 </html>
